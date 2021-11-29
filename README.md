@@ -44,5 +44,11 @@ And then we will fit the classifier to the training data. Below is the code for 
 from sklearn.neighbors import KNeighborsClassifier  
 classifier= KNeighborsClassifier(n_neighbors=5, metric='minkowski', p=2 )  
 classifier.fit(x_train, y_train)  
+y_pred= classifier.predict(x_test)  
 ```
-
+Now we will create the Confusion Matrix for our K-NN model to see the accuracy of the classifier. Below is the code for it: <br />
+```python:
+from sklearn.metrics import confusion_matrix  
+cm= confusion_matrix(y_test, y_pred)  
+```
+we can see there are 64+29= 93 correct predictions and 3+4= 7 incorrect predictions
