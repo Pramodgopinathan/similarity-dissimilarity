@@ -56,10 +56,15 @@ The predicted output is well good as most of the red points are in the red regio
 
 ## **Manhattan Distance**
 The Manhattan distance (aka taxicab distance) is a measure of the distance between two points on a 2D plan when the path between these two points has to follow the grid layout. 
+
 ![](https://github.com/Pramodgopinathan/similarity-dissimilarity/blob/fdcc765727710238fa2a5215ab26683ad70dd41f/Manhattan%20Distance.png)
+
 Manhattan Blocks <br />
-It is based on the idea that a taxi will have to stay on the road and will not be able to drive through buildings! 
+It is based on the idea that a taxi will have to stay on the road and will not be able to drive through buildings!
+
 ![](https://github.com/Pramodgopinathan/similarity-dissimilarity/blob/fd4704e7353921d70bfa190fe9f8fc3b9913a9e8/Manhattan%20Distance%20-%20Block.png)
+
+
 
 # Reference
 https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning
