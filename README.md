@@ -64,7 +64,9 @@ It is based on the idea that a taxi will have to stay on the road and will not b
 
 ![](https://github.com/Pramodgopinathan/similarity-dissimilarity/blob/fd4704e7353921d70bfa190fe9f8fc3b9913a9e8/Manhattan%20Distance%20-%20Block.png)
 
-
+## **Cosine Similarity & Cosine Distance**
+Cosine Similarity is very widely used in recomedation system. 
+Suppose there are two points P1 and P2 and if similarity between two point increases then distance would decrease, sameway if distance between two point increases then similarity decrease.
 
 # Reference
 https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning
