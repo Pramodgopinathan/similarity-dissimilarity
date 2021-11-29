@@ -52,3 +52,6 @@ from sklearn.metrics import confusion_matrix
 cm= confusion_matrix(y_test, y_pred)  
 ```
 we can see there are 64+29= 93 correct predictions and 3+4= 7 incorrect predictions
+<br />
+
+**Manhattan Distance**
