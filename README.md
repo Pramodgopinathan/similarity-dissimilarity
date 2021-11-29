@@ -68,6 +68,20 @@ It is based on the idea that a taxi will have to stay on the road and will not b
 Cosine Similarity is very widely used in recomedation system. 
 Suppose there are two points P1 and P2 and if similarity between two point increases then distance would decrease, sameway if distance between two point increases then similarity decrease.
 
+![](https://github.com/Pramodgopinathan/similarity-dissimilarity/blob/62f7e84d862078852ea813679e71b8dad84f82f4/Cosine%20Similarity%20Part%201.png)
+
+In this example, If we want to find simarity between point P1 and P2 then we have to find angle assiming that angle is around 45 degree. <br />
+
+Cosine similarity = Cosine theta (Angle between P1 and P2)
+
+Also angle would be around -1 to 1 <br />
+Example: Cosine 45 = 0.53
+
+
+![](https://github.com/Pramodgopinathan/similarity-dissimilarity/blob/62f7e84d862078852ea813679e71b8dad84f82f4/Cosine%20Similarity%20Part%202.png)
+
+
+
 # Reference
 https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning
 
