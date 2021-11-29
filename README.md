@@ -84,8 +84,9 @@ In above example P1 and P2 distance is very big, now if we want to calculate ang
 
 ![](https://github.com/Pramodgopinathan/similarity-dissimilarity/blob/62f7e84d862078852ea813679e71b8dad84f82f4/Cosine%20Similarity%20Part%203.png)
 
+In above example P1 and P2 is in same line or plane, hence Cos 0 = 1 that means both the point is similar as it there in same plane.
 
-In above example P1 and P2 is in same line or plane, hence Cos 0 = 1
+![](https://github.com/Pramodgopinathan/similarity-dissimilarity/blob/62f7e84d862078852ea813679e71b8dad84f82f4/Cosine%20Similarity%20Part%204.png)
 
 # Reference
 https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning
