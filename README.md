@@ -55,6 +55,7 @@ we can see there are 64+29= 93 correct predictions and 3+4= 7 incorrect predicti
 The predicted output is well good as most of the red points are in the red region and most of the green points are in the green region. However, there are few green points in the red region and a few red points in the green region. So these are the incorrect observations that we have observed in the confusion matrix(7 Incorrect output).
 
 ## **Manhattan Distance**
+When calculating the distance between two points on a 2D plan/map we often calculate or measure the distance using straight line between these two points. Thought this “as the crow flies” distance can be very accurate it is not always relevant as there is not always a straight path between two points.
 
 # Reference
 https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning
