@@ -2,7 +2,7 @@
 Similarly, it is a measurement in which we would like to understand each object within the database are alike, whereas dissimilarity measures the difference in objects in the database. This study tells to what degree objects are similar or dissimilar. The measurement is based on the distance between each features in the database. So if distances are lesser, that means both the measured objects are identical, whereas they are not similar when distance are more. Understanding similarly and dissimilarity would be important when using clustering or some classification, and anomaly detection.
 
 # Methods
-Below are the following method of measuring the distance between the objects  <br />
+Below are the following method of measuring the distance between the objects  <br /> <br /> 
 **Euclidean Distance** is based on the Pythagoras theorem. The Euclidean distance between any two points, whether the points are 2D or 3D space, is used to measure the length of a segment connecting the two points. 
 ![](https://github.com/Pramodgopinathan/similarity-dissimilarity/blob/856ae39167d7dcd62a7ac4f68e77b4501e93cb1d/Euclidean_Distance.png) <br/>
 **Example** - Car manufacturer company want to give the ads to the users who are interested in buying their product, so for this we have a dataset that contains multiple user's information through the social network. <br/>
@@ -33,5 +33,16 @@ x_train= st_x.fit_transform(x_train)
 x_test= st_x.transform(x_test)  
 ```
 
-# Reference
-https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning
+Fitting K-NN classifier to the Training data:
+Now we will fit the K-NN classifier to the training data. To do this we will import the KNeighborsClassifier class of Sklearn Neighbors library. After importing the class, we will create the Classifier object of the class. The Parameter of this class will be <br /> <br /> 
+n_neighbors: To define the required neighbors of the algorithm. Usually, it takes 5. <br />
+metric='minkowski': This is the default parameter and it decides the distance between the points. <br />
+**p=2: It is equivalent to the standard Euclidean metric.** <br />
+And then we will fit the classifier to the training data. Below is the code for it: <br />
+
+```python:
+from sklearn.neighbors import KNeighborsClassifier  
+classifier= KNeighborsClassifier(n_neighbors=5, metric='minkowski', p=2 )  
+classifier.fit(x_train, y_train)  
+```
+
