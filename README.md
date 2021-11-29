@@ -3,13 +3,13 @@ Similarly, it is a measurement in which we would like to understand each object 
 
 # Methods
 Below are the following method of measuring the distance between the objects  <br /> <br /> 
-**Euclidean Distance** is based on the Pythagoras theorem. The Euclidean distance between any two points, whether the points are 2D or 3D space, is used to measure the length of a segment connecting the two points. 
+## **Euclidean Distance** is based on the Pythagoras theorem. The Euclidean distance between any two points, whether the points are 2D or 3D space, is used to measure the length of a segment connecting the two points. 
 ![](https://github.com/Pramodgopinathan/similarity-dissimilarity/blob/856ae39167d7dcd62a7ac4f68e77b4501e93cb1d/Euclidean_Distance.png) <br/>
 **Example** - Car manufacturer company want to give the ads to the users who are interested in buying their product, so for this we have a dataset that contains multiple user's information through the social network. <br/>
 Lets Estimated Salary and age consider for the independent variable and the purchased variable is dependent variable. <br/><br/>
 Ref: Python code in the repository
 
-Importing Library, independent and dependent variable
+### Importing Library, independent and dependent variable
 ```python:
 import numpy as nm  
 import matplotlib.pyplot as mtp  
@@ -20,12 +20,12 @@ data_set= pd.read_csv('user_data.csv')
 x= data_set.iloc[:, [2,3]].values  
 y= data_set.iloc[:, 4].values  
 ```
-Lets split the into test and train
+### Lets split the into test and train
 ```python:
 from sklearn.model_selection import train_test_split  
 x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.25, random_state=0)  
 ```
-Lets now standardise the scaler so that machine is able to interpreate between 0s and 1s.
+### Lets now standardise the scaler so that machine is able to interpreate between 0s and 1s.
 ```python:
 from sklearn.preprocessing import StandardScaler    
 st_x= StandardScaler()    
@@ -33,12 +33,12 @@ x_train= st_x.fit_transform(x_train)
 x_test= st_x.transform(x_test)  
 ```
 
-Fitting K-NN classifier to the Training data:
-Now we will fit the K-NN classifier to the training data. To do this we will import the KNeighborsClassifier class of Sklearn Neighbors library. After importing the class, we will create the Classifier object of the class. The Parameter of this class will be <br /> <br /> 
-n_neighbors: To define the required neighbors of the algorithm. Usually, it takes 5. <br />
-metric='minkowski': This is the default parameter and it decides the distance between the points. <br />
-**p=2: It is equivalent to the standard Euclidean metric.** <br />
-And then we will fit the classifier to the training data. Below is the code for it: <br />
+### Fitting K-NN classifier to the Training data:
+### Now we will fit the K-NN classifier to the training data. To do this we will import the KNeighborsClassifier class of Sklearn Neighbors library. After importing the class, we will create the Classifier object of the class. The Parameter of this class will be <br /> <br /> 
+### n_neighbors: To define the required neighbors of the algorithm. Usually, it takes 5. <br />
+### metric='minkowski': This is the default parameter and it decides the distance between the points. <br />
+### **p=2: It is equivalent to the standard Euclidean metric.** <br />
+### And then we will fit the classifier to the training data. Below is the code for it: <br />
 
 ```python:
 from sklearn.neighbors import KNeighborsClassifier  
@@ -46,12 +46,13 @@ classifier= KNeighborsClassifier(n_neighbors=5, metric='minkowski', p=2 )
 classifier.fit(x_train, y_train)  
 y_pred= classifier.predict(x_test)  
 ```
-Now we will create the Confusion Matrix for our K-NN model to see the accuracy of the classifier. Below is the code for it: <br />
+### Now we will create the Confusion Matrix for our K-NN model to see the accuracy of the classifier. Below is the code for it: <br />
 ```python:
 from sklearn.metrics import confusion_matrix  
 cm= confusion_matrix(y_test, y_pred)  
 ```
-we can see there are 64+29= 93 correct predictions and 3+4= 7 incorrect predictions
+### we can see there are 64+29= 93 correct predictions and 3+4= 7 incorrect predictions
 <br />
+### Conclusion 
 
-**Manhattan Distance**
+## **Manhattan Distance**
