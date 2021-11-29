@@ -72,7 +72,7 @@ Suppose there are two points P1 and P2 and if similarity between two point incre
 
 In this example, If we want to find simarity between point P1 and P2 then we have to find angle assiming that angle is around 45 degree. <br />
 
-Cosine similarity = Cosine theta (Angle between P1 and P2)
+**Cosine similarity = Cosine theta (Angle between P1 and P2)
 
 Also angle would be around -1 to 1 <br />
 Example: Cosine 45 = 0.53
@@ -80,7 +80,12 @@ Example: Cosine 45 = 0.53
 
 ![](https://github.com/Pramodgopinathan/similarity-dissimilarity/blob/62f7e84d862078852ea813679e71b8dad84f82f4/Cosine%20Similarity%20Part%202.png)
 
+In above example P1 and P2 distance is very big, now if we want to calculate angle which is around 90 degree. Hence Cos 90 = 0 that means both the point is not similar. If we try to calculate it would be high. 
 
+![](https://github.com/Pramodgopinathan/similarity-dissimilarity/blob/62f7e84d862078852ea813679e71b8dad84f82f4/Cosine%20Similarity%20Part%203.png)
+
+
+In above example P1 and P2 is in same line or plane, hence Cos 0 = 1
 
 # Reference
 https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning
